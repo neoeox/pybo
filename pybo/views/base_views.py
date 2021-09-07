@@ -7,6 +7,8 @@ from ..models import Question
 
 
 def index(request):
+    3 / 0  # 강제로 오류발생
+
     # return HttpResponse(request)
     # return HttpResponse("안녕하세요 pybo에 오신것을 환영합니다.")
     """

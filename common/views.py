@@ -30,7 +30,7 @@ def page_not_found(request, exception):
 
 def internal_server_error(request, exception):
     """
-    500 Page not found
+    500 Internal Server Error
     """
     return render(request, 'common/500.html', {})
 
