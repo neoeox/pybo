@@ -4,10 +4,13 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic
 
 from ..models import Question
+import logging
+logger = logging.getLogger("pybo")
 
 
 def index(request):
-    3 / 0  # 강제로 오류발생
+    # 3 / 0  # 강제로 오류발생
+    logger.info("INFO 레벨로 출력")
 
     # return HttpResponse(request)
     # return HttpResponse("안녕하세요 pybo에 오신것을 환영합니다.")
